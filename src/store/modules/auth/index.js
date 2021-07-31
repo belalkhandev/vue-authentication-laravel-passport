@@ -40,7 +40,9 @@ export default {
             }else {
                 commit('SET_TOKEN', null)
                 commit('SET_USER', null)
+                
                 if (res.data.errors) {
+                    console.log(res.data.errors);
                     commit('SET_VALIDATION_ERRORS', res.data.errors, { root:true })
                     commit('SET_ERROR_MESSAGE', null, { root:true })
                 } else if (res.data.message) {
