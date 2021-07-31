@@ -4,7 +4,7 @@
         <ul>
             <li>
                 <a href="#" @click.prevent="signOut">
-                    <span>Logout ({{ user.name }})</span>
+                    <span>Logout ({{ user.email }})</span>
                 </a>
             </li>
         </ul>
